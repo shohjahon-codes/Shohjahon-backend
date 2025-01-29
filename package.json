@@ -1,15 +1,14 @@
 {
-	"name": "json-server-app",
+	"name": "json-server-vercel",
 	"version": "1.0.0",
-	"description": "Render uchun JSON Server",
-	"main": "index.js",
+	"description": "JSON Server Vercel uchun",
+	"main": "server.js",
 	"scripts": {
-		"start": "node index.js"
+	  "start": "node server.js",
+	  "vercel-start": "json-server --watch db.json --port $PORT"
 	},
 	"dependencies": {
-		"json-server": "^0.17.3"
-	},
-	"engines": {
-		"node": ">=16.x"
+	  "json-server": "^0.17.0"
 	}
-}
+  }
+  
